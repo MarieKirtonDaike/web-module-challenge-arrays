@@ -177,16 +177,17 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-
+let flavorsArray = [] ;
 function filterByWord(originalFlavors, flavorName){
   for (let i = 0 ; i < originalFlavors.length; i++){
-    if (originalFlavors.includes(flavorName)){
-      const filterArray= originalFlavors.push(originalFlavors[i]);
+    if (originalFlavors[i].includes(flavorName)){
+     flavorsArray.push(originalFlavors[i]);
+     
     }
-  }
+  } return flavorsArray
 }
 
-console.log(filterByWord(originalFlavors,"Chocolate"))
+
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
